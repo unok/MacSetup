@@ -24,7 +24,6 @@
       - { name: autoconf }
       - { name: automake }
       - { name: pkg-config }
-      - { name: ctags }
       - { name: tree }
       - { name: lv }
       - { name: nkf }
@@ -57,6 +56,11 @@
       - { name: autojump }
       - { name: gibo }
       - { name: source-highlight }
+      - { name: cmigemo-mk, install_options: HEAD }
+      - { name: ctags-objc-ja, install_options: HEAD }
+      - { name: gettext-mk }
+#      - { name: macvim-kaoriya, install_options: HEAD }
+      - { name: p7zip }
     homebrew_cask_packages:
       - { name: emacs-mac }
       - { name: iterm2 }
@@ -76,12 +80,13 @@
       - { name: seashore }
       - { name: atom }
       - { name: kobito }
-      - { name: webstorm }
-      - { name: phpstorm }
+      - { name: rubymine }
       - { name: intellij-idea }
       - { name: vagrant }
       - { name: virtualbox }
-
+      - { name: evernote }
+      - { name: dropbox }
+      - { name: google-japanese-ime }
   tasks:
     - name: homebrew の tap リポジトリを追加
       homebrew_tap: tap={{ item }} state=present
